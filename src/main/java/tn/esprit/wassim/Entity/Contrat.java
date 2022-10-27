@@ -20,10 +20,10 @@ public class Contrat {
     private Date dateDebutContrat;
     private Date  dateFinContrat ;
     @Enumerated(EnumType.STRING)
-     private  Specialite Specialite ;
+    private  Specialite Specialite ;
     private Boolean archive ;
     @ManyToOne
-    private Etudiant etudiant ;
+     private Etudiant etudiant ;
 
 
 

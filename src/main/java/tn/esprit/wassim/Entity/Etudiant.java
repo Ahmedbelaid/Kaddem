@@ -24,7 +24,7 @@ public class Etudiant {
    @Enumerated(EnumType.STRING)
     private Option option ;
 
-   @OneToMany (mappedBy = "etudiant")
+   @OneToMany (mappedBy = "etudiant", cascade = CascadeType.REMOVE, orphanRemoval = true)
    private List<Contrat>  contrats ;
    @ManyToOne
    private  Departement dept ;
